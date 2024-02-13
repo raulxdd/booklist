@@ -10,24 +10,81 @@
 <body>
 	<h1><span class="icon">&#128214;</span>My Book List</h1>
 	<form>
-		<label for="title">Pealkiri:</label>
+		<label for="title">Title:</label>
 		<input type="text" id="title" name="title" required>
 
-		<label for="author">Autor:</label>
+		<label for="author">Author:</label>
 		<input type="text" id="author" name="author" required>
 
-		<label for="description">Kirjeldus:</label>
+		<label for="description">Description:</label>
 		<textarea name="description" id="description" required></textarea>
 
-		<label for="status">Staatus:</label>
+		<label for="tear-rating">Tear Rating:</label>
+		<div class="rating">
+			<input type="radio" id="tear-rating-1" name="tear-rating" value="1">
+			<label for="tear-rating-1"></label>
+			<input type="radio" id="tear-rating-2" name="tear-rating" value="2">
+			<label for="tear-rating-2"></label>
+			<input type="radio" id="tear-rating-3" name="tear-rating" value="3">
+			<label for="tear-rating-3"></label>
+			<input type="radio" id="tear-rating-4" name="tear-rating" value="4">
+			<label for="tear-rating-4"></label>
+			<input type="radio" id="tear-rating-5" name="tear-rating" value="5">
+			<label for="tear-rating-5"></label>
+		</div>
+
+
+        <label for="spice-rating">Spice Rating:</label>
+        <div class="rating">
+            <input type="radio" id="spice-rating-1" name="spice-rating" value="1">
+            <label for="spice-rating-1"></label>
+            <input type="radio" id="spice-rating-2" name="spice-rating" value="2">
+            <label for="spice-rating-2"></label>
+            <input type="radio" id="spice-rating-3" name="spice-rating" value="3">
+            <label for="spice-rating-3"></label>
+            <input type="radio" id="spice-rating-4" name="spice-rating" value="4">
+            <label for="spice-rating-4"></label>
+            <input type="radio" id="spice-rating-5" name="spice-rating" value="5">
+            <label for="spice-rating-5"></label>
+        </div>
+
+        <label for="excitement-rating">Excitement Rating:</label>
+        <div class="rating">
+            <input type="radio" id="excitement-rating-1" name="excitement-rating" value="1">
+            <label for="excitement-rating-1"></label>
+            <input type="radio" id="excitement-rating-2" name="excitement-rating" value="2">
+            <label for="excitement-rating-2"></label>
+            <input type="radio" id="excitement-rating-3" name="excitement-rating" value="3">
+            <label for="excitement-rating-3"></label>
+            <input type="radio" id="excitement-rating-4" name="excitement-rating" value="4">
+            <label for="excitement-rating-4"></label>
+            <input type="radio" id="excitement-rating-5" name="excitement-rating" value="5">
+            <label for="excitement-rating-5"></label>
+        </div>
+
+        <label for="overall-rating">Overall Rating:</label>
+        <div class="rating">
+            <input type="radio" id="overall-rating-1" name="overall-rating" value="1">
+            <label for="overall-rating-1"></label>
+            <input type="radio" id="overall-rating-2" name="overall-rating" value="2">
+            <label for="overall-rating-2"></label>
+            <input type="radio" id="overall-rating-3" name="overall-rating" value="3">
+            <label for="overall-rating-3"></label>
+            <input type="radio" id="overall-rating-4" name="overall-rating" value="4">
+            <label for="overall-rating-4"></label>
+            <input type="radio" id="overall-rating-5" name="overall-rating" value="5">
+            <label for="overall-rating-5"></label>
+        </div>
+
+		<label for="status">Status:</label>
 		<select name="status" id="status" required>
 			<option value="" disabled selected>Vali Staatus</option>
-			<option value="read">Loetud</option>
-			<option value="reading">Loen</option>
-			<option value="to-read">Plaanis lugeda</option>
+			<option value="read">read</option>
+			<option value="reading">reading</option>
+			<option value="to-read">To read</option>
 		</select>
 
-		<button type="submit">Lisa raamat</button>
+		<button type="submit">Add Book!</button>
 	</form>
 	<div id="book-list"></div>
 	<script src="app.js"></script>
