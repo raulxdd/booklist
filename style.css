@@ -117,9 +117,9 @@ form button {
 /* Style the labels as stars */
 .rating label {
     display: inline-block;
-    width: 30px; /* Adjust width as needed */
-    height: 30px; /* Adjust height as needed */
-    background-image: url('star.png'); /* Path to your unchecked star image */
+    width: 30px; 
+    height: 30px; 
+    background-image: url('star.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer; /* Change cursor to pointer when hovering over stars */
@@ -127,10 +127,10 @@ form button {
 
 /* Style the labels when they are selected */
 .rating input[type="radio"]:checked ~ label {
-    background-image: url('starchecked.png'); /* Path to your checked star image */
+    background-image: url('starchecked.png'); 
 }
 
 /* Add spacing between the stars */
 .rating label {
-    margin-right: 5px; /* Adjust margin as needed */
+    margin-right: 5px; 
 }

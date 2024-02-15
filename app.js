@@ -78,6 +78,24 @@ function displayBooks() {
     const overallRatingElement = document.createElement('p');
     overallRatingElement.textContent = `Overall Rating: ${book.overallRating}`;
 
+    switch (book.status) {
+      case 'read':
+        status.textContent = 'Loetud';
+        status.style.color = 'green';
+        break;
+      case 'to-read':
+        status.textContent = 'Plaanis lugeda';
+        status.style.color = 'red';
+        break;
+      case 'reading':
+        status.textContent = 'Loen';
+        status.style.color = 'orange';
+        break;
+      default:
+        break;
+    }
+
+
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('delete-btn');
     deleteBtn.textContent = 'Delete';
